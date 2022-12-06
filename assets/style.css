@@ -1,6 +1,12 @@
+:root {
+  --robot-color: #ff3482;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 html {
-  box-sizing: border-box;
   --1px: 0.0625rem;
   --2px: 0.125rem;
   --3px: 0.1875rem;
@@ -38,14 +44,90 @@ html {
   --90px: 5.625rem;
   --100px: 6.25rem;
 
-  /* Media Queries */
-  --600px: 37.5rem;
-  --768px: 48rem;
-  --992px: 62rem;
-  --1200px: 75rem;
+  /* Media Queries
+    600px: 37.5rem;
+    768px: 48rem;
+    992px: 62rem;
+    1200px: 75rem;
+  */
 }
 
 body {
   margin: 0;
   min-height: 100vh;
+  background: #45badd;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./robot.gif");
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 400px;
+  height: 50px;
+  font-size: var(--20px);
+  color: white;
+  background: var(--robot-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Courier New", Courier, monospace;
+}
+
+button:hover {
+  filter: brightness(95%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+#joke-container {
+  width: 400px;
+  min-height: 100px;
+  overflow-x: auto; 
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  margin: 20px 0;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+#joke-text-container a {
+  color: var(--robot-color);
+  text-decoration: none;
+}
+
+#loader img {
+  display: block;
+  margin: auto;
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .container {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  button {
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+  }
 }

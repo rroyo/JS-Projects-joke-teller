@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joke Teller</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
     <script defer src="assets/script.js"></script>
-    <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-    
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <button id="button">Tell Me a Programming Joke</button>
+      <div id="joke-container">
+        <span id="joke-text-container"
+          >Adorable Robot by
+          <a href="https://giphy.com/eyedesyn" target="_blank">@eyedesyn</a>
+          at
+          <a
+            href="https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY"
+            target="_blank"
+            >Giphy</a
+          >.</span>
+        <div id="loader" hidden>
+          <img src="assets/loader.svg" alt="loader svg" aria-hidden="true"/>
+        </div>
+      </div>
+      <audio id="audio" controls></audio>
+    </div>
+  </body>
 </html>
