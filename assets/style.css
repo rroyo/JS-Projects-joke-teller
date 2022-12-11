@@ -115,7 +115,7 @@ button:disabled {
   text-decoration: none;
 }
 
-#loader img {
+#loader-wrapper img {
   display: block;
   margin: auto;
 }

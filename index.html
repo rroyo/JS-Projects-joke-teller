@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/style.css" />
+    <script defer src="assets/voice.js"></script>
     <script defer src="assets/script.js"></script>
   </head>
   <body>
@@ -25,11 +26,11 @@
             target="_blank"
             >Giphy</a
           >.</span>
-        <div id="loader" hidden>
+        <div id="loader-wrapper" hidden>
           <img src="assets/loader.svg" alt="loader svg" aria-hidden="true"/>
         </div>
       </div>
-      <audio id="audio" controls></audio>
+      <audio id="audio" controls hidden></audio>
     </div>
   </body>
 </html>
