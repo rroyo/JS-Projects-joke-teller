@@ -72,13 +72,15 @@ function _hideLoading() {
     loader.hidden = true;
 }
 
-function _clearTextJoke() {
+function _clearJoke() {
+    clearInterval(interval);
+    audioElement.src = '';
     jokeText.innerText = "";
 }
 
 async function tellJoke() {
-    try {
-        _clearTextJoke();
+    try {        
+        _clearJoke();
         _showLoading();
         _disableButton();
         const joke = await _getJoke();
