@@ -10,7 +10,7 @@
 # JS-Projects-Joke-Teller
 <hr>
 
-2022/12/05 Joke Teller - [Github](https://github.com/rroyo/JS-Projects-joke-teller) | [Live](https://rroyo.github.io/JS-Projects-joke-teller): I practiced making calls to two API. I added a text area where the joke is slowly typed using an interval, as it's being cast.
+<b>2022/12/05 Joke Teller</b> - [Github](https://github.com/rroyo/JS-Projects-joke-teller) | [Live](https://rroyo.github.io/JS-Projects-joke-teller): I practiced making calls to two API. I learned to use audio elements. I added a text area where the joke is slowly typed using an interval, as it's being cast.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
