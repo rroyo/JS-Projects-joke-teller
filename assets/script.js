@@ -1,5 +1,3 @@
-"use strict";
-
 const audioElement = document.getElementById("audio");
 const button = document.getElementById("button");
 const jokeContainer = document.getElementById("joke-container");
